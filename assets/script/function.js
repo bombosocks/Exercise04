@@ -8,9 +8,11 @@ function jsStyle() {
         sentence.style.color="blue";
         sentence.style.backgroundColor="red";
         sentence.style.fontSize="2.25em";
+        i = 0;
     }
     else {
-        sentence.style="null";
+        sentence.style=null;
+        i = 1;
     }
 }
 
@@ -30,11 +32,20 @@ function getOptions() {
 	//create a function that is called on the mouseover that turns the text red
 
 	//create a function that is called on the mouseout that turns the text black
-    function mouseout() {
-        "use strict";
-        document.getElementById("rb").style.color=null;
-        document.getElementById("rb").style.fontSize="1em";
-    }
+
+function mouseover() {
+    "use strict";
+    document.getElementById("rb").style.color="red";
+    document.getElementById("rb").style.fontSize="2.25em"
+}
+
+function mouseout() {
+    "use strict";
+    document.getElementById("rb").style.color=null;
+    document.getElementById("rb").style.fontSize="1em";
+}
+
+
 
 // code two functions multiply and divide functions here
 	//hints:
